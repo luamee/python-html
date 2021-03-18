@@ -11,3 +11,7 @@ def index():
         {'author': {'username': 'Luo'}, 'body': "Oizinho faces!"}
     ]
     return render_template("index.html", user=user, posts=posts)
+
+@app.route('/login')
+def login():
+    return render_template("login.html")
